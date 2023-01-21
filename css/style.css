@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,500;1,700;1,900&family=Rubik:wght@300;400;500&family=Satisfy&display=swap');
+*{
+     box-sizing: border-box;
+}
+
+body{
+     margin: 0;
+     padding: 0;
+     background-color: #868685;
+     font-family: 'Roboto', sans-serif;
+}
+
+.card-container{
+     width: 300px;
+     height: 250px;
+     background-color: rgb(184, 169, 169);
+     margin: 0 auto;
+     margin-top: 200px;
+     border-radius: 10px;
+     transition: all 0.4s linear; 
+     position: relative;
+     cursor: pointer; 
+}
+
+.content{
+     transform: translateY(-320px);
+     opacity: 0;
+     transition-duration: 0.4s;
+     margin-top: -10px;
+}
+
+.card-container:hover{
+     height: 400px;
+     background-color: rgb(227, 203, 203);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-image: url(../img/bbb.jfif);
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-box-shadow: 2px 22px 160px 58px rgba(83,212,66,1);
+     -moz-box-shadow: 2px 22px 160px 58px rgba(83,212,66,1);
+     box-shadow: 2px 22px 160px 58px rgba(83,212,66,1);
+}
+
+.card-container:hover > .content{
+     opacity: 1;
+     transform: translateY(-50px);
+}
+.card-container h1{
+     text-align: center;
+     padding-bottom: -10px;
+     font-weight: 300;
+}
+
+.card-container p{
+     padding-left: 10px;
+     padding-right: 10px;
+     text-align: center;
+     font-weight: 300;
+     margin-top: -10px;     
+}
+
+.card-container img{
+     width: 60%;
+     position: relative;
+     margin-left: 60px;
+     transform: translateY(-60px);
+     border-radius: 10px;
+     transition: all 0.5s linear; 
+     background: transparent;
+     -webkit-box-shadow: -5px 3px 28px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 3px 28px 1px rgba(0,0,0,0.75);
+     box-shadow: -5px 3px 28px 1px rgba(0,0,0,0.75);
+}
+
+.card-container img:hover{
+     background-image: url(../img/bbb.jfif);
+}
+
+button{
+     width: 150px;
+     height: 30px;
+     border: none;
+     margin-top: 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition-duration: 0.5s;
+     background-color: rgb(111, 226, 111);
+}
+
+button:hover{
+     transform: scale(1.2);
+}
